@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bro.css">
+</head>
+
+<body>
+    <div class="A">
+        <div class="a1">
+            <h1><a href="../html/home.html" target="_blank">101</a></h1>
+        </div>
+        <!-- 要修改 -->
+        <div class="a2">
+            <ul>
+                <li><a href="../html/home.html" class="ax ">首页</a></li>
+                <li><a href="#" class="ax xia">商品浏览</a></li>
+                <!-- <li><a href="#" class="ax">333</a></li> -->
+            </ul>
+        </div>
+        <div class="box">回到顶部</div>
+        <div class="a3"><input type="text" placeholder="搜索" class="intext"><a href="#"><img src="../tp/qt/搜索.png"
+                    alt="搜索" width="20px" class="img"></a></div>
+        <div class="a4"><img src="../tp/ys/原神.png" alt="#" width="40"><span><a href="../html/join.html">原神职业哥</a></span>
+        </div>
+    </div>
+    <!-- 第三部分 -->
+    <div class="C">
+        <div class="sort">
+            <button class="high">价格从低到高</button>
+            <button class="reset">重置</button>
+        </div>
+        <div class="c3"></div>
+    </div>
+    <div class="numBtn">
+        <ul class="num">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+        </ul>
+    </div>
+
+    <div class="D">
+        <div>
+            <ul class="d1">
+                <li>
+                    <div><a href="../html/home.html" target="_blank">原神</a></div>
+                </li>
+                <li>《原神》是由上海米哈游网络科技股份有限公司制作发行的一款开放世界冒险游戏，于2017年1月底立项，原初测试于2019年6月21日开启，再临测试于2020年3月19日开启，启程测试于2020年6月11日开启，PC版技术性开放测试于9月15日开启，公测于2020年9月28日开启。在数据方面，同在官方服务器的情况下，iOS、PC、Android平台之间的账号数据互通，玩家可以在同一账号下切换设备。
+                </li>
+                <li><a href="https://ys.mihoyo.com/" target="_blank" class="dd1">下载app</a></li>
+            </ul>
+        </div>
+        <div class="d2">
+            <div>
+                <ul>
+                    <li class="dd2">关于原神</li>
+                    <li>关于</li>
+                    <li>管理团队</li>
+                    <li>工作机会</li>
+                    <li>客户服务</li>
+                    <li>帮助</li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li class="dd2">新手指南</li>
+                    <li>如何注册</li>
+                    <li>如何升级</li>
+                    <li>如何拿到雷电将军</li>
+                    <li>原神是什么</li>
+                    <li>限时活动未通过怎么办</li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li class="dd2">合作伙伴</li>
+                    <li>合作机构</li>
+                    <li>合作导师</li>
+                </ul>
+            </div>
+        </div>
+
+        <script src="../js/bor/sort.js"></script>
+        <script>
+            const box = document.querySelector('.box')
+            window.addEventListener('scroll', function () {
+                const top1 = document.documentElement.scrollTop
+                if (top1 >= 280) {
+                    box.style.opacity = '1'
+                    box.style.cursor = 'pointer'
+                }
+                else {
+                    box.style.opacity = '0'
+                    box.style.cursor = 'default'
+                }
+            })
+            box.addEventListener('click', function () {
+                document.documentElement.scrollTop = 0
+            })
+
+
+        </script>
+</body>
+
+</html>

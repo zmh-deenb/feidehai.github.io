@@ -1,0 +1,327 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+
+.A {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 29px;
+    box-sizing: border-box;
+
+}
+
+.a1 a {
+    display: block;
+    margin-left: 80px;
+    width: 200px;
+    height: 50px;
+    text-decoration: none;
+    color: #000000;
+    transform: skew(-20deg);
+}
+
+.a3 {
+    display: flex;
+
+    justify-content: space-around;
+
+    width: 420px;
+    height: 40px;
+
+    border-radius: 20px;
+    border: 1px solid;
+
+
+}
+
+.a3 input {
+    display: block;
+    width: 360px;
+    height: 20px;
+
+    padding: 10px;
+    border: 0;
+
+    outline: none;
+
+    border-radius: 20px;
+}
+
+.a3 input::placeholder {
+    font-size: 14px;
+    color: #999;
+}
+
+.a3 a {
+    display: block;
+    line-height: 45px;
+}
+
+.a4 {
+
+    width: 200px;
+    height: 40px;
+}
+
+.a4 img {
+    border-radius: 20px;
+    vertical-align: middle;
+    margin-right: 7px;
+}
+
+.a4 a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #b89a15;
+}
+
+.a4 a:hover {
+    color: #8f770f;
+}
+
+
+/* 放大镜 */
+.B {
+    position: relative;
+    margin-top: 100px;
+    padding-top: 20px;
+    padding-left: 100px;
+    height: 600px;
+    display: flex;
+}
+
+.boxTp {
+    margin-right: 20px;
+    width: 350px;
+    height: 438px;
+    border: 1px solid #ccc;
+    float: left;
+    position: relative;
+}
+
+.big {
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    position: relative;
+    opacity: 0;
+}
+
+.mask {
+    width: 150px;
+    height: 150px;
+    background-color: rgb(67, 67, 67);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: .5;
+    cursor: move;
+    display: none;
+}
+
+.img {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+/*  */
+.imgs {
+    position: absolute;
+    left: 120px;
+    bottom: 80px;
+    width: 300px;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.imgs1,
+.imgs2,
+.imgs3,
+.imgs4,
+.imgs5,
+.imgs6,
+.imgs7 {
+    height: 44px;
+}
+
+.imgs1:hover {
+    border: 1px red solid;
+}
+
+.imgs2:hover {
+    border: 1px red solid;
+}
+
+.imgs3:hover {
+    border: 1px red solid;
+}
+
+.imgs4:hover {
+    border: 1px red solid;
+}
+
+.imgs5:hover {
+    border: 1px red solid;
+}
+
+.imgs6:hover {
+    border: 1px red solid;
+}
+
+.imgs7:hover {
+    border: 1px red solid;
+}
+
+
+
+
+/* 文本 */
+
+.B .b2 {
+    margin-left: 50px;
+    padding-top: 20px;
+
+    width: 600px;
+    height: 360px;
+
+    background-color: #ffffff;
+    padding-left: 30px;
+}
+
+.B .b2 .bb1 {
+    padding-top: 10px;
+    font-size: 20px;
+
+    width: 550px;
+}
+
+.B .b2 .bb2 {
+    padding-top: 30px;
+    font-size: 30px;
+
+    width: 550px;
+}
+
+.B .b2 .bb3 {
+    padding-top: 60px;
+    line-height: 30px;
+
+    width: 550px;
+}
+
+.B .b2 .bb3 .text {
+    font-size: 20px;
+}
+
+.B .b2 .bb4 {
+    padding-top: 120px;
+}
+
+.B .b2 .bb4 .bbb1 .bbbb1 {
+    display: flex;
+    width: 100px;
+    height: 20px;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+.B .b2 .bb4 .bbb1 .bbbb1 .bbbbb1,
+.B .b2 .bb4 .bbb1 .bbbb1 .bbbbb3 {
+
+    width: 20px;
+    height: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    border: solid black 0.5px;
+    cursor: pointer;
+    line-height: 20px;
+}
+
+.B .b2 .bb4 .bbb1 .bbbb1 .bbbbb1:hover,
+.B .b2 .bb4 .bbb1 .bbbb1 .bbbbb3:hover {
+    background-color: rgb(151, 151, 151);
+}
+
+.B .b2 .bb4 .bbb1 .bbbb1 .bbbbb2 {
+    width: 20px;
+    margin: 0 auto;
+}
+
+.B .b2 .bb4 .bbb2 {
+
+    margin: 20px auto;
+    width: 120px;
+    height: 60px;
+    background-color: rgb(255, 255, 255);
+    line-height: 60px;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 20px;
+    border: #000 0.5px solid;
+    cursor: pointer;
+}
+
+.B .b2 .bb4 .bbb2:hover {
+    background-color: rgb(151, 151, 151);
+}
+
+.C {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.c2 {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 30px;
+    margin-bottom: 15px;
+
+    width: 1200px;
+    height: 30px;
+}
+
+.c2 h3 {
+    font-size: 24px;
+}
+
+.c3 {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.c3 div a {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    background-color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+}
+
+.c3 div {
+    display: block;
+}
+
+.c3 div .c3 a:hover {
+    color: #999;
+}
+
+.c3 a img {
+    height: 150px;
+}

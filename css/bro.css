@@ -1,0 +1,315 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+li {
+    list-style: none;
+}
+
+.box {
+    position: fixed;
+    text-align: center;
+    padding-top: 5px;
+    font-size: 14px;
+    left: 1800px;
+    top: 600px;
+    z-index: 999;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    opacity: 0;
+    transition: all 0.5s;
+    cursor: default;
+    border: 0.5px #b89a15 solid;
+    color: #b89a15;
+}
+
+.A {
+
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 29px;
+    box-sizing: border-box;
+}
+
+.a1 a {
+    display: block;
+    width: 200px;
+    height: 50px;
+    text-decoration: none;
+    color: #000000;
+    transform: skew(-20deg);
+}
+
+.a2 ul {
+    display: flex;
+
+    width: 240px;
+    height: 30px;
+
+    justify-content: space-around;
+
+}
+
+.ax {
+    display: block;
+    padding: 6px 8px;
+    font-size: 19px;
+    color: #b89a15;
+    text-decoration: none;
+}
+
+.a2 li .xia,
+.a2 li a:hover {
+    border-bottom: 2px solid #b89a15;
+}
+
+.a3 {
+    display: flex;
+
+    justify-content: space-around;
+
+    width: 420px;
+    height: 40px;
+
+    border-radius: 20px;
+    border: 1px solid;
+
+
+}
+
+.a3 input {
+    display: block;
+    width: 360px;
+    height: 20px;
+
+    padding: 10px;
+    border: 0;
+
+    outline: none;
+
+    border-radius: 20px;
+}
+
+.a3 input::placeholder {
+    font-size: 14px;
+    color: #999;
+}
+
+.a3 a {
+    display: block;
+    line-height: 45px;
+}
+
+.a4 {
+    width: 200px;
+    height: 40px;
+}
+
+.a4 img {
+    border-radius: 20px;
+    vertical-align: middle;
+    margin-right: 7px;
+}
+
+.a4 a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #b89a15;
+}
+
+.a4 a:hover {
+    color: #8f770f;
+}
+
+.C {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.c1 {
+    margin-top: 11px;
+    display: flex;
+
+
+    width: 1200px;
+    height: 60px;
+
+    background-color: #ffffff;
+    box-shadow: 0px 1px 2px 0px rgba(211, 211, 211, 0.5);
+}
+
+
+.c1 h3 {
+    margin-left: 15px;
+    margin-right: 5px;
+    line-height: 60px;
+    color: #00a4ff;
+}
+
+.c1 a {
+    flex: 1;
+    text-align: center;
+    line-height: 60px;
+    text-decoration: none;
+    color: #000000;
+}
+
+.c1 .cx {
+    color: #00a4ff;
+}
+
+.c1 span {
+    display: contents;
+    line-height: 60px;
+    color: rgba(125, 125, 125, 0.5);
+}
+
+.c1 a:hover {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.c1 span a:hover {
+    color: #29388a;
+    background-color: rgba(255, 255, 255);
+}
+
+.c3 {
+    margin-top: 30px;
+    width: 1000px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.c3 .dd {
+    transition: all 0.3s;
+}
+
+.c3 .dd:hover {
+    box-shadow: 0 4px 4px 4px rgba(0, 0, 0, 0.3);
+    transform: translateY(-5px);
+}
+
+.c3 .abox {
+    margin: 10px;
+    display: block;
+    width: 300px;
+
+    text-align: center;
+    text-decoration: none;
+    color: #b89a15;
+
+    overflow: hidden;
+
+    font-weight: bold;
+
+
+}
+
+.c3 a img {
+    width: 300px;
+
+}
+
+.numBtn {
+    width: 200px;
+    margin: 10px auto;
+}
+
+.numBtn .num {
+    display: flex;
+    justify-content: space-around;
+}
+
+.numBtn .num li {
+    width: 20px;
+    height: 20px;
+    display: block;
+
+    border: 0.5px solid;
+
+    cursor: pointer;
+    text-align: center;
+
+}
+
+
+
+.D {
+    display: flex;
+    height: 300px;
+
+    box-sizing: padding-box;
+    padding-top: 50px;
+
+    background-position: bottom;
+}
+
+.D div {
+
+    margin: 0 auto;
+    justify-content: space-around;
+}
+
+.D div .d1 {
+    width: 500px;
+    height: 300px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.D .d1 li {
+    margin-bottom: 20px;
+    color: #b89a15;
+}
+
+.D .d1 li div a {
+    display: block;
+
+    width: 195px;
+    height: 41px;
+    background-image: url(../tp/ys/优拉.jpg);
+
+    font-size: 0;
+}
+
+.D .d1 li .dd1 {
+    text-decoration: none;
+    color: #b89a15;
+
+    display: block;
+
+    width: 150px;
+    height: 30px;
+    border: #b89a15 solid;
+
+    text-align: center;
+    line-height: 30px;
+}
+
+.D .d1 li .dd1:hover {
+    color: #977f13;
+}
+
+.D .d2 {
+    width: 700px;
+    display: flex;
+}
+
+.D .d2 div ul .dd2 {
+    font-size: 18px;
+}
+
+.D .d2 div ul li {
+    font-size: 14px;
+    margin-bottom: 20px;
+
+    color: #b89a15;
+}

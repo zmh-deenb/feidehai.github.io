@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>放大镜</title>
+    <link rel="stylesheet" href="../css/com.css">
+</head>
+
+<body>
+    <div class="A">
+        <div class="a1">
+            <h1><a href="../html/home.html" target="_blank">101</a></h1>
+        </div>
+        <!-- 要修改 -->
+
+        <div class="a4"><img src="../tp/ys/原神.png" alt="#" width="40"><span><a href="../html/join.html">原神职业哥</a></span>
+        </div>
+    </div>
+
+    <div class="B">
+        <div class="b1">
+            <div class="boxTp">
+                <img src="../tp/lol/暗夜猎手.png" alt="" class="mg">
+                <div class="mask"></div>
+            </div>
+            <div class="big">
+                <img src="../tp/lol/big/暗夜猎手b.png" alt="" class="img">
+            </div>
+        </div>
+        <div class="imgs">
+            <div class="imgs1"><img src="../tp/lol/幻灵战斗蝠 薇恩.png" alt="" width="35px"></div>
+            <div class="imgs2"><img src="../tp/lol/摄魂使者 薇恩.png" alt="" width="35px"></div>
+            <div class="imgs3"><img src="../tp/lol/黎明使者 薇恩.png" alt="" width="35px"></div>
+            <div class="imgs4"><img src="../tp/lol/光明哨兵 薇恩.png" alt="" width="35px"></div>
+            <div class="imgs5"><img src="../tp/lol/至臻 烈焰美人 薇恩.png" alt="" width="35px"></div>
+            <div class="imgs6"><img src="../tp/lol/源计划：净化 薇恩.png" alt="" width="35px"></div>
+            <div class="imgs7"><img src="../tp/lol/暗夜猎手.png" alt="" width="35px"></div>
+        </div>
+
+        <div class="b2">
+            <div class="bb1">“杀死你，并不是因为我心怀正义，而是我觉得，杀死你让我倍感愉快。”</div>
+            <div class="bb2" style="color:red;">价格:￥198</div>
+            <div class="bb3">
+                <span
+                    class="text">介绍：</span><span>肖娜·薇恩是一位无情的德玛西亚怪物猎手。终其一生，她都在寻找杀害她全家的恶魔。她的手臂上装着十字弩，心中燃烧着熊熊的复仇怒火，从暗影中射出圣银弩箭的风暴，薇恩只有在杀死那些为黑暗魔法所控制的人和生物时，才能真正感到愉悦。</span>
+            </div>
+            <div class="bb4">
+                <div class="bbb1">
+                    <div class="bbbb1">
+                        <div class="bbbbb1">-</div>
+                        <div class="bbbbb2">1</div>
+                        <div class="bbbbb3">+</div>
+                    </div>
+                </div>
+                <div class="bbb2">加入购物车</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="C">
+        <div class="c2">
+            <h3>同行推荐</h3>
+        </div>
+        <div class="c3"></div>
+    </div>
+
+    <script src="../js/com/zoom.js"></script>
+    <script>
+        let listFour = [
+            { url: "../html/com.html", img: "../tp/lol/暗夜猎手.png", uname: "暗夜猎手", money: "￥198" },
+            { url: "#", img: "../tp/lol/暴走萝莉.png", uname: "暴走萝莉", money: "￥328" },
+            { url: "#", img: "../tp/lol/残月之肃.png", uname: "残月之肃", money: "￥98" },
+            { url: "#", img: "../tp/lol/德邦总管.png", uname: "德邦总管", money: "￥328" },
+            { url: "#", img: "../tp/lol/复仇焰魂.png", uname: "复仇焰魂", money: "￥198" },
+            { url: "#", img: "../tp/lol/寒冰射手.png", uname: "寒冰射手", money: "￥128" },
+            { url: "#", img: "../tp/lol/破败之王.png", uname: "破败之王", money: "￥648" },
+            { url: "#", img: "../tp/lol/魂锁典狱长.png", uname: "魂锁典狱长", money: "￥328" },
+            { url: "#", img: "../tp/lol/皮城女警.png", uname: "皮城女警", money: "￥128" },
+            { url: "#", img: "../tp/lol/龙血武姬.png", uname: "龙血武姬", money: "￥198" }
+        ]
+
+        let four = ''
+        listFour.forEach(e => {
+            four += `<div><a href="${e.url}" target="_blank"><img src="${e.img}" alt="${e.uname}">${e.uname}<div style="color:red;">${e.money}</div></a></div>`
+        })
+        document.querySelector('.c3').innerHTML = four
+
+        let bbbbb2 = document.querySelector('.bbbbb2')
+        let num = 1
+        document.querySelector('.bbbbb1').addEventListener('click', () => {
+
+            if (num <= 0) {
+                num = 0 + 1
+            }
+            bbbbb2.innerHTML = --num
+        })
+        document.querySelector('.bbbbb3').addEventListener('click', () => {
+            bbbbb2.innerHTML = ++num
+        })
+
+
+    </script>
+
+</body>
+
+</html>

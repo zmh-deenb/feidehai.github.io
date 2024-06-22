@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: relative;
+    background-color: rgb(85, 85, 85);
+    min-height: 100vh;
+
+    margin: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* 视频背景 */
+.video-bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #000;
+    z-index: -99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-bg video {
+    min-width: 100%;
+    min-height: 100%;
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    object-fit: cover;
+}
+
+/* 登入 */
+.apps {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+
+}
+
+
+
+.boxs {
+    position: relative;
+    height: 150px;
+    width: 300px;
+    text-align: center;
+}
+
+.boxs .username {
+
+    width: 300px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+}
+
+.boxs .username input {
+    padding-left: 2px;
+    width: 200px;
+    height: 25px;
+    outline: none;
+    border: solid pink 1px;
+}
+
+.boxs .paseword {
+    width: 300px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+}
+
+.boxs .paseword input {
+    padding-left: 2px;
+    width: 200px;
+    height: 25px;
+    outline: none;
+    border: solid pink 1px;
+}
+
+.boxs .btn {
+    margin-top: 10px;
+    width: 200px;
+    height: 30px;
+
+    background-color: #ffffff;
+
+    line-height: 30px;
+    font-size: 15px;
+
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.boxs .btn:active {
+    background-color: #8d8d8d;
+}
+
+.boxs .btns {
+    position: absolute;
+    left: 220px;
+    top: 185px;
+    display: inline-block;
+    color: #fff;
+    cursor: pointer;
+}
